@@ -1,0 +1,12 @@
+{
+    
+    "C_Cpp.errorSquiggles": "disabled",
+    
+    "files.associations": {
+        "liveServer.settings.port": 5500,
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "utility": "cpp",
+        "xstring": "cpp"
+    }
+}
