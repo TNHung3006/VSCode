@@ -1,0 +1,109 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-right: 1px solid #ccc;
+  }
+  
+  .menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .menu a.active {
+    background-color: #4285f4;
+    color: white;
+  }
+  
+  .content {
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contact-form, .education, .work {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .buttons {
+    text-align: right;
+  }
+  
+  .send, .cancel {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .send {
+    background-color: #4285f4;
+    color: white;
+  }
+  
+  .cancel {
+    background-color: #e0e0e0;
+  }
+  
+  .education ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .companies {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .companies span {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+  }

@@ -1,7 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
+    font-style: initial;
 }
 .header{
     background: aqua;
@@ -14,17 +15,15 @@
     padding-left: 12%;
     padding-top: 2%;
     color: blue;
-}
-
-.gop{
-    display: flex;
-    width: 100%;
+    font-style: italic; 
 }
 .nav{
     background: gray;
     text-align: center;
     width: 20%;
     height: 500px;
+    float: left;
+    font-style: initial;
 }
 .nav h2{
     margin: 20px;
@@ -35,9 +34,10 @@
 }
 
 .main{
-    background: rgb(255, 255, 255);
+    background: rgb(221, 160, 160);
     width: 80%;
     height: 500px;
+    float: right;
 
 }
 .main h3{
@@ -49,6 +49,7 @@
     height: 100px;
     padding-left: 20px;
     padding-right: 3px;
+    float: left;
 }
 main p{
     text-align: justify;    /*dùng để căn đều văn bản*/

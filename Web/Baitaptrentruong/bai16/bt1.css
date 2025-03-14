@@ -1,6 +1,8 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-style: initial;
 
 }
 .header{
@@ -8,23 +10,21 @@
     text-align: center;
     width: 100%;
     height: 100px; 
+
 }
 
 .header h1{
     padding-left: 12%;
     padding-top: 2%;
     color: blue;
-}
-
-.gop{
-    display: flex;
-    width: 100%;
+    font-style: italic;
 }
 .nav{
     background: gray;
     text-align: center;
     width: 20%;
     height: 500px;
+    float: left;
 }
 .nav h2{
     margin: 20px;
@@ -35,14 +35,15 @@
 }
 
 .main{
-    background: rgb(255, 255, 255);
+    background: rgb(139, 209, 154);
     width: 80%;
     height: 500px;
-
+    float: right;
 }
 .main h3{
     text-align: center;
     margin: 20px;  
+    
 }
 .main img{
     width: 150px;
