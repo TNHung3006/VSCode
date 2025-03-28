@@ -5,7 +5,7 @@
     font-style: initial;
 
 }
-.header{
+header{
     background: aqua;
     text-align: center;
     width: 100%;
@@ -13,45 +13,45 @@
 
 }
 
-.header h1{
+header h1{
     padding-left: 12%;
     padding-top: 2%;
     color: blue;
     font-style: italic;
 }
-.nav{
+nav{
     background: gray;
     text-align: center;
     width: 20%;
     height: 500px;
     float: left;
 }
-.nav h2{
+nav h2{
     margin: 20px;
 }
-.nav ul{
+nav ul{
     text-align: start;
     padding-left: 10px;
 }
 
-.main{
+main{
     background: rgb(139, 209, 154);
     width: 80%;
     height: 500px;
     float: right;
 }
-.main h3{
+main h3{
     text-align: center;
     margin: 20px;  
     
 }
-.main img{
+main img{
     width: 150px;
     height: 100px;
     padding-left: 3px;
     padding-right: 20px;
 }
-.main h4{
+main h4{
     margin-left: 20px;  
 }
 main p{
