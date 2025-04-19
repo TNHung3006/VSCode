@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập Dữ Liệu</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .container {
+            width: 400px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: calc(100% - 60px);
+            padding: 8px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #content-area {
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: #f9f9f9;
+            white-space: pre-line; /* Preserve line breaks */
+        }
+        .content-item {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <label for="data-input">Nhập dữ liệu</label>
+            <input type="text" id="data-input">
+            <button onclick="saveData()">Save</button>
+        </div>
+
+        <div>
+            <label for="content-area">Nội dung</label>
+            <div id="content-area">
+                </div>
+        </div>
+    </div>
+
+    <script>
+        function saveData() {
+            const inputElement = document.getElementById('data-input');
+            const contentAreaElement = document.getElementById('content-area');
+            const inputText = inputElement.value.trim();
+
+            if (inputText !== "") {
+                const currentDate = new Date();
+                const formattedDate = `${currentDate.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })} ${currentDate.toLocaleDateString('vi-VN')}`;
+                const newData = `${inputText} - ${formattedDate}`;
+
+                // Create a new paragraph element for each entry
+                const newItem = document.createElement('p');
+                newItem.classList.add('content-item');
+                newItem.textContent = newData;
+
+                // Append the new item to the beginning of the content area
+                contentAreaElement.prepend(newItem);
+
+                // Clear the input field
+                inputElement.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
