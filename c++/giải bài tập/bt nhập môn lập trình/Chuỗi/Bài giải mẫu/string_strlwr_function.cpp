@@ -9,7 +9,6 @@ void charlwr(char &a){
 void my_strlwr(char s[]){
     for(int i=0; i<strlen(s); i++)
         charlwr(s[i]);
-
 }
 int main(){
     char s[100];
